@@ -4,3 +4,9 @@ build-cpu-count:
 
 demo-cpu-count:
 	cd demo && node cpu_count.js
+
+create-project:
+	npm init neon $$name
+
+build-project:
+	cd $$name && yarn build-release
